@@ -12,6 +12,10 @@ if date>=32 or month<=0:
     print("Please enter valid number")
     exit()
 
+if month == 2 and date>=29:
+    print("February has 28 days")
+    exit()
+
 year = int(input("Please enter year | Note: Year should not be greater than 2099 and less than 1501 | EG: 2020: "))
 
 if year<=1500 or year>=2099:
